@@ -61,6 +61,8 @@ import {
   ShoppingCartOutlined,
   ShopOutlined,
   FileTextOutlined,
+  SettingOutlined,
+  ExperimentOutlined,
   MenuFoldOutlined,
   MenuUnfoldOutlined,
   DownOutlined,
@@ -114,6 +116,18 @@ const allMenuItems = [
     icon: FileTextOutlined,
     label: '补贴报表',
     roles: ['admin', 'worker'],
+  },
+  {
+    key: '/policy',
+    icon: SettingOutlined,
+    label: '政策配置',
+    roles: ['admin'],
+  },
+  {
+    key: '/simulation',
+    icon: ExperimentOutlined,
+    label: '模拟测算',
+    roles: ['admin'],
   },
 ]
 

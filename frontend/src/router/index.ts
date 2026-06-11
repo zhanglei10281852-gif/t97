@@ -55,6 +55,26 @@ const routes: RouteRecordRaw[] = [
           roles: ["admin", "worker"],
         },
       },
+      {
+        path: "policy",
+        name: "PolicyConfig",
+        component: () => import("@/views/PolicyConfig.vue"),
+        meta: {
+          title: "政策配置",
+          icon: "SettingOutlined",
+          roles: ["admin"],
+        },
+      },
+      {
+        path: "simulation",
+        name: "SubsidySimulation",
+        component: () => import("@/views/SubsidySimulation.vue"),
+        meta: {
+          title: "模拟测算",
+          icon: "ExperimentOutlined",
+          roles: ["admin"],
+        },
+      },
     ],
   },
 ];
